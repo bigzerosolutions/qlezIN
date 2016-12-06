@@ -62,19 +62,19 @@
             })
             .when('/customer_home', {
                 controller: 'CustomerHomeController',
-                templateUrl: 'views/customer/home/customerHome.view.html',
+                templateUrl: 'views/Customer/Home/customerHome.view.html',
                 controllerAs: 'vm'
             })
 
             .when('/customer_registration', {
                 controller: 'CustomerRegistrationController',
-                templateUrl: 'views/customer/registration/customerRegistration.view.html',
+                templateUrl: 'views/Customer/Registration/customerRegistration.view.html',
                 controllerAs: 'customer'
             })
 
             .when('/customer_actions', {
                 controller: 'CustomerActionsController',
-                templateUrl: 'views/customer/Actions/customerActions.view.html',
+                templateUrl: 'views/Customer/Actions/customerActions.view.html',
                 controllerAs: 'vm'
             })
             .otherwise({ redirectTo: '/login_page' });
