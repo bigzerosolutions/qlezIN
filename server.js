@@ -121,7 +121,7 @@ app.post('/addProduct', function(req , res)
     console.log("Add Product : " + req.body)
 
     request({
-      uri: "http://qlez.jeudmu4ph3.us-west-2.elasticbeanstalk.com/AddProduct2DB",
+      uri: "http://qlez.jeudmu4ph3.us-west-2.elasticbeanstalk.com/AddProduct",
       method: "POST",
       form: {
           product_ID: req.body.pID,
