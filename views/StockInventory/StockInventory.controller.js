@@ -260,6 +260,7 @@
             $http.post('/addProduct',$scope.product).success(function(response){
                 $scope.clearAll();
                 var message = '';
+                $('#singleproduct').modal('hide');
                 if(response == "true"){
                     if(productEntryType=='single'){
                         message = "Product has been added to the database";
