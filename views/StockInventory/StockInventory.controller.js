@@ -256,11 +256,10 @@
             $scope.product.pCategory = $scope.product.pCategory.category_name;
             $scope.isLoading = "Loading....";
             $scope.product.Expiry =  $filter('date')($scope.product.Expiry, 'dd-MM-yyyy');
-            $('#singleproduct').modal('hide');
+            $('#ProductEntry').modal('hide');
             $http.post('/addProduct',$scope.product).success(function(response){
                 $scope.clearAll();
                 var message = '';
-                $('#singleproduct').modal('hide');
                 if(response == "true"){
                     if(productEntryType=='single'){
                         message = "Product has been added to the database";
