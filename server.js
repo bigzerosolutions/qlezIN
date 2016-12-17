@@ -1,4 +1,4 @@
-var port = process.env.PORT || 10000; 
+var port = process.env.PORT || 8000; 
 var express = require('express');
 var app = express();
 //var mongojs = require('mongojs');
